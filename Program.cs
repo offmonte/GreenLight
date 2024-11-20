@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "Global Solution - Green Light",
         Version = "v1",
-        Description = "Documentação da API do GreenLight",
+        Description = "Documentação da API - GreenLight",
     });
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);

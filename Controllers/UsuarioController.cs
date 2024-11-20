@@ -17,13 +17,19 @@ namespace GreenLight.Controllers
         {
             _usuarioRepository = usuarioRepository;
         }
-
+        /// <summary>
+        /// Buscar todos Usuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
             return Ok(await _usuarioRepository.GetUsuarios());
         }
-
+        /// <summary>
+        /// Buscar Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
@@ -31,7 +37,10 @@ namespace GreenLight.Controllers
             if (result == null) return NotFound();
             return Ok(result);
         }
-
+        /// <summary>
+        /// Criar Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Usuario>> AddUsuario([FromBody] Usuario usuario)
         {
@@ -39,7 +48,10 @@ namespace GreenLight.Controllers
             var createdUsuario = await _usuarioRepository.AddUsuario(usuario);
             return CreatedAtAction(nameof(GetUsuario), new { id = createdUsuario.Id }, createdUsuario);
         }
-
+        /// <summary>
+        /// Update Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Usuario>> UpdateUsuario(int id, [FromBody] Usuario usuario)
         {
@@ -48,7 +60,10 @@ namespace GreenLight.Controllers
 
             return await _usuarioRepository.UpdateUsuario(usuario);
         }
-
+        /// <summary>
+        /// Deletar Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteUsuario(int id)
         {

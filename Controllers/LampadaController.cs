@@ -17,13 +17,19 @@ namespace GreenLight.Controllers
         {
             _lampadaRepository = lampadaRepository;
         }
-
+        /// <summary>
+        /// Buscar todas Lampadas
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Lampada>>> GetLampadas()
         {
             return Ok(await _lampadaRepository.GetLampadas());
         }
-
+        /// <summary>
+        /// Buscar Lampada
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Lampada>> GetLampada(int id)
         {
@@ -31,7 +37,10 @@ namespace GreenLight.Controllers
             if (result == null) return NotFound();
             return Ok(result);
         }
-
+        /// <summary>
+        /// Criar Lampada
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Lampada>> AddLampada([FromBody] Lampada lampada)
         {
@@ -39,7 +48,10 @@ namespace GreenLight.Controllers
             var createdLampada = await _lampadaRepository.AddLampada(lampada);
             return CreatedAtAction(nameof(GetLampada), new { id = createdLampada.Id }, createdLampada);
         }
-
+        /// <summary>
+        /// Update Lampada
+        /// </summary>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Lampada>> UpdateLampada(int id, [FromBody] Lampada lampada)
         {
@@ -48,7 +60,10 @@ namespace GreenLight.Controllers
 
             return await _lampadaRepository.UpdateLampada(lampada);
         }
-
+        /// <summary>
+        /// Deletar Lampada
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteLampada(int id)
         {

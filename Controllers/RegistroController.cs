@@ -17,13 +17,19 @@ namespace GreenLight.Controllers
         {
             _registroRepository = registroRepository;
         }
-
+        /// <summary>
+        /// Buscar todos Registro
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Registro>>> GetRegistros()
         {
             return Ok(await _registroRepository.GetRegistros());
         }
-
+        /// <summary>
+        /// Buscar Registro
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Registro>> GetRegistro(int id)
         {
@@ -31,7 +37,10 @@ namespace GreenLight.Controllers
             if (result == null) return NotFound();
             return Ok(result);
         }
-
+        /// <summary>
+        /// Criar Registro
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult<Registro>> AddRegistro([FromBody] Registro registro)
         {
@@ -39,7 +48,10 @@ namespace GreenLight.Controllers
             var createdRegistro = await _registroRepository.AddRegistro(registro);
             return CreatedAtAction(nameof(GetRegistro), new { id = createdRegistro.Id }, createdRegistro);
         }
-
+        /// <summary>
+        /// Update Registro
+        /// </summary>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<ActionResult<Registro>> UpdateRegistro(int id, [FromBody] Registro registro)
         {
@@ -48,7 +60,10 @@ namespace GreenLight.Controllers
 
             return await _registroRepository.UpdateRegistro(registro);
         }
-
+        /// <summary>
+        /// Deletar Registro
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteRegistro(int id)
         {
