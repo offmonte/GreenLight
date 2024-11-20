@@ -35,7 +35,7 @@ Indústrias e Galpões: Controle eficiente da iluminação em grandes áreas operacio
 Complexos Empresariais: Iluminação automatizada para escritórios, corredores e estacionamentos.
 Centros Comerciais e Áreas Públicas: Aplicações em estacionamentos, praças e parques, ajustando a luz conforme a necessidade.
 
-### Por que o GreenLight?
+### Por que usar o GreenLight ?
 
 Diferente de sistemas tradicionais ou sensores de movimento, o GreenLight utiliza sensores LDR para medir a luminosidade ambiente com precisão. Essa abordagem elimina desperdícios de energia e oferece controle inteligente e seguro, garantindo que erros humanos não impactem o desempenho do sistema.
 
