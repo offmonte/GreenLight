@@ -21,6 +21,6 @@ namespace GreenLight.Models
         public string Senha { get; set; }
 
         // Relacionamento um-para-muitos: um usuário pode ter várias lâmpadas
-        public ICollection<Lampada> Lampadas { get; set; }
+        public ICollection<Lampada>? Lampadas { get; set; }
     }
 }

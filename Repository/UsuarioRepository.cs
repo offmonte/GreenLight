@@ -18,12 +18,12 @@ namespace GreenLight.Repository
 
         public async Task<IEnumerable<Usuario>> GetUsuarios()
         {
-            return await _dbContext.Usuarios.ToListAsync();
+            return await _dbContext.Usuarios.Include(x => x.Lampadas).ToListAsync();
         }
 
         public async Task<Usuario> GetUsuario(int id)
         {
-            return await _dbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
+            return await _dbContext.Usuarios.Include(x => x.Lampadas).FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task<Usuario> AddUsuario(Usuario usuario)

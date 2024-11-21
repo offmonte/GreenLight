@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace GreenLight.Models
 {
@@ -23,6 +24,8 @@ namespace GreenLight.Models
         // Relacionamento muitos-para-um: cada lâmpada pertence a um único usuário
         [ForeignKey("Usuario")]
         public int UsuarioId { get; set; }
-        public Usuario Usuario { get; set; }
+
+        [JsonIgnore]
+        public Usuario? Usuario { get; set; }
     }
 }

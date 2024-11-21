@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace GreenLight.Models
 {
@@ -12,7 +13,8 @@ namespace GreenLight.Models
         // Relacionamento com a lâmpada
         [ForeignKey("Lampada")]
         public int LampadaId { get; set; }
-        public Lampada Lampada { get; set; }
+
+        public Lampada? Lampada { get; set; }
 
         [Required]
         public float ConsumoWh { get; set; } // Consumo em watt-hora (mês atual)

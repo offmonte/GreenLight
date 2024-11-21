@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenLight", "GreenLight.csproj", "{2E8D77D3-E38F-4C0D-B64D-536782A36FFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenLight", "GreenLight.csproj", "{2E8D77D3-E38F-4C0D-B64D-536782A36FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGreenLight", "..\TestGreenLight\TestGreenLight.csproj", "{60F492A7-6A72-4816-96B7-6C5E0997E9D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2E8D77D3-E38F-4C0D-B64D-536782A36FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E8D77D3-E38F-4C0D-B64D-536782A36FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E8D77D3-E38F-4C0D-B64D-536782A36FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F492A7-6A72-4816-96B7-6C5E0997E9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F492A7-6A72-4816-96B7-6C5E0997E9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F492A7-6A72-4816-96B7-6C5E0997E9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F492A7-6A72-4816-96B7-6C5E0997E9D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
