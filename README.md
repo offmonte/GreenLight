@@ -1,52 +1,52 @@
 # GreenLight
 
-*Sistema Inteligente de IluminaÁ„o Sustent·vel*
+*Sistema Inteligente de Ilumina√ß√£o Sustent√°vel*
 
-O GreenLight È uma soluÁ„o inovadora e sustent·vel projetada para otimizar o uso de iluminaÁ„o em grandes ·reas, como ind˙strias, complexos empresariais e outros ambientes de grande escala. Utilizando sensores de luminosidade (LDR), o sistema garante que as l‚mpadas sejam ativadas apenas quando necess·rio, promovendo economia de energia e sustentabilidade.
+O GreenLight √© uma solu√ß√£o inovadora e sustent√°vel projetada para otimizar o uso de ilumina√ß√£o em grandes √°reas, como ind√∫strias, complexos empresariais e outros ambientes de grande escala. Utilizando sensores de luminosidade (LDR), o sistema garante que as l√¢mpadas sejam ativadas apenas quando necess√°rio, promovendo economia de energia e sustentabilidade.
 
-O grande diferencial do GreenLight È a integraÁ„o com um aplicativo inteligente, que permite aos usu·rios monitorar o consumo de energia em tempo real e o histÛrico mensal. AlÈm disso, o aplicativo oferece a funcionalidade de desligamento manual das l‚mpadas, essencial para manutenÁ„o ou ajustes em ·reas especÌficas. PorÈm, o sistema n„o permite que as l‚mpadas sejam ligadas manualmente se houver luz suficiente, eliminando desperdÌcios causados por erros humanos.
+O grande diferencial do GreenLight √© a integra√ß√£o com um aplicativo inteligente, que permite aos usu√°rios monitorar o consumo de energia em tempo real e o hist√≥rico mensal. Al√©m disso, o aplicativo oferece a funcionalidade de desligamento manual das l√¢mpadas, essencial para manuten√ß√£o ou ajustes em √°reas espec√≠ficas. Por√©m, o sistema n√£o permite que as l√¢mpadas sejam ligadas manualmente se houver luz suficiente, eliminando desperd√≠cios causados por erros humanos.
 
-### Principais BenefÌcios
+## Principais Benef√≠cios
 
-ï **Economia de Energia:**
+‚Ä¢ **Economia de Energia:**
 
-Reduz o consumo desnecess·rio, desligando automaticamente as l‚mpadas em condiÁıes de alta luminosidade natural.
+Reduz o consumo desnecess√°rio, desligando automaticamente as l√¢mpadas em condi√ß√µes de alta luminosidade natural.
 
-ï **Controle Inteligente:**
+‚Ä¢ **Controle Inteligente:**
 
-Monitoramento em tempo real e histÛrico de consumo mensal atravÈs de um aplicativo integrado.
-OpÁ„o de desligamento manual para ajustes em situaÁıes especÌficas, com bloqueio para evitar ligaÁıes inadequadas.
+Monitoramento em tempo real e hist√≥rico de consumo mensal atrav√©s de um aplicativo integrado.
+Op√ß√£o de desligamento manual para ajustes em situa√ß√µes espec√≠ficas, com bloqueio para evitar liga√ß√µes inadequadas.
 
-ï **Sustentabilidade:**
+‚Ä¢ **Sustentabilidade:**
 
-Promove pr·ticas empresariais sustent·veis, reduzindo o impacto ambiental e a emiss„o de carbono.
+Promove pr√°ticas empresariais sustent√°veis, reduzindo o impacto ambiental e a emiss√£o de carbono.
 
-ï **ReduÁ„o de Custos Operacionais:**
+‚Ä¢ **Redu√ß√£o de Custos Operacionais:**
 
-Minimiza gastos com energia elÈtrica e manutenÁ„o.
+Minimiza gastos com energia el√©trica e manuten√ß√£o.
 
-ï **Escalabilidade e Flexibilidade:**
+‚Ä¢ **Escalabilidade e Flexibilidade:**
 
-Adapt·vel a sistemas de iluminaÁ„o existentes ou novos, adequado para ambientes de qualquer porte.
+Adapt√°vel a sistemas de ilumina√ß√£o existentes ou novos, adequado para ambientes de qualquer porte.
 
-### Cen·rios de Uso
+## Cen√°rios de Uso
 
-Ind˙strias e Galpıes: Controle eficiente da iluminaÁ„o em grandes ·reas operacionais.
-Complexos Empresariais: IluminaÁ„o automatizada para escritÛrios, corredores e estacionamentos.
-Centros Comerciais e ¡reas P˙blicas: AplicaÁıes em estacionamentos, praÁas e parques, ajustando a luz conforme a necessidade.
+Ind√∫strias e Galp√µes: Controle eficiente da ilumina√ß√£o em grandes √°reas operacionais.
+Complexos Empresariais: Ilumina√ß√£o automatizada para escrit√≥rios, corredores e estacionamentos.
+Centros Comerciais e √Åreas P√∫blicas: Aplica√ß√µes em estacionamentos, pra√ßas e parques, ajustando a luz conforme a necessidade.
 
-### Por que usar o GreenLight ?
+## Por que o GreenLight?
 
-Diferente de sistemas tradicionais ou sensores de movimento, o GreenLight utiliza sensores LDR para medir a luminosidade ambiente com precis„o. Essa abordagem elimina desperdÌcios de energia e oferece controle inteligente e seguro, garantindo que erros humanos n„o impactem o desempenho do sistema.
+Diferente de sistemas tradicionais ou sensores de movimento, o GreenLight utiliza sensores LDR para medir a luminosidade ambiente com precis√£o. Essa abordagem elimina desperd√≠cios de energia e oferece controle inteligente e seguro, garantindo que erros humanos n√£o impactem o desempenho do sistema.
 
 ## CRUD da API
 
-Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as entidades, siga a ordem de criaÁ„o dos registros (POST) de acordo com as dependÍncias:
+Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as entidades, siga a ordem de cria√ß√£o dos registros (POST) de acordo com as depend√™ncias:
 
 ### Ordem de Postagem
-1. **Usuario** (necess·rio para criar Lampada)
-2. **Lampada** (necess·rio para criar Registro)
-3. **Registro** (˙ltima entidade, pois depende de todas as anteriores)
+1. **Usuario** (necess√°rio para criar Lampada)
+2. **Lampada** (necess√°rio para criar Registro)
+3. **Registro** (√∫ltima entidade, pois depende de todas as anteriores)
 
 ---
 
@@ -56,20 +56,21 @@ Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as ent
 ```json
 {
   "id": 1,
-  "nome": "Jo„o Silva",
-  "email": "joao.silva@email.com",
-  "senha": "senha123",
-  "lampadas": []
+  "nome": "Lucas Monte",
+  "email": "lucas@monte",
+  "senha": "lucasmonte123",
+  "lampadas": null
 }
 ```
+
 
 ```json
 {
   "id": 2,
-  "nome": "Maria Oliveira",
-  "email": "maria.oliveira@email.com",
-  "senha": "senha456",
-  "lampadas": []
+  "nome": "Pedro Sena",
+  "email": "pedro@sena",
+  "senha": "pedrosena456",
+  "lampadas": null
 }
 ```
 
@@ -78,38 +79,20 @@ Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as ent
 ```json
 {
   "id": 1,
-  "apelido": "L‚mpada Oficina",
-  "nomeDispositivo": "SmartLamp123",
-  "modo": true,
-  "usuarioId": 1,
-  "usuario": {
-    "id": 1,
-    "nome": "Jo„o Silva",
-    "email": "joao.silva@email.com",
-    "senha": "senha123",
-    "lampadas": [
-      "L‚mpada Oficina"
-    ]
-  }
+  "apelido": "Lampada Oficina",
+  "nomeDispositivo": "SmartLight1",
+  "modo": false,
+  "usuarioId": 1
 }
 ```
 
 ```json
 {
   "id": 2,
-  "apelido": "L‚mpada EscritÛrio",
-  "nomeDispositivo": "SmartLamp456",
-  "modo": false,
-  "usuarioId": 2,
-  "usuario": {
-    "id": 2,
-    "nome": "Maria Oliveira",
-    "email": "maria.oliveira@email.com",
-    "senha": "senha456",
-    "lampadas": [
-      "L‚mpada EscritÛrio"
-    ]
-  }
+  "apelido": "Lampada Escritorio",
+  "nomeDispositivo": "SmartLight2",
+  "modo": true,
+  "usuarioId": 2
 }
 ```
 
@@ -118,25 +101,10 @@ Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as ent
 {
   "id": 1,
   "lampadaId": 1,
-  "lampada": {
-    "id": 1,
-    "apelido": "L‚mpada Oficina",
-    "nomeDispositivo": "SmartLamp123",
-    "modo": true,
-    "usuarioId": 1,
-    "usuario": {
-      "id": 1,
-      "nome": "Jo„o Silva",
-      "email": "joao.silva@email.com",
-      "senha": "senha123",
-      "lampadas": [
-        "L‚mpada Oficina"
-      ]
-    }
-  },
-  "consumoWh": 50,
-  "dataConsumo": "2024-11-20T18:30:00Z",
-  "diferencaMes": 10
+  "lampada": null,
+  "consumoWh": 25,
+  "dataConsumo": "2024-11-22T12:00:00.000Z",
+  "diferencaMes": 5
 }
 ```
 
@@ -144,25 +112,10 @@ Para garantir o correto funcionamento do CRUD e dos relacionamentos entre as ent
 {
   "id": 2,
   "lampadaId": 2,
-  "lampada": {
-    "id": 2,
-    "apelido": "L‚mpada EscritÛrio",
-    "nomeDispositivo": "SmartLamp456",
-    "modo": false,
-    "usuarioId": 2,
-    "usuario": {
-      "id": 2,
-      "nome": "Maria Oliveira",
-      "email": "maria.oliveira@email.com",
-      "senha": "senha456",
-      "lampadas": [
-        "L‚mpada EscritÛrio"
-      ]
-    }
-  },
-  "consumoWh": 30,
-  "dataConsumo": "2024-11-20T20:45:00Z",
-  "diferencaMes": 5
+  "lampada": null,
+  "consumoWh": 60,
+  "dataConsumo": "2024-11-22T18:30:00.000Z",
+  "diferencaMes": 12
 }
 ```
 
